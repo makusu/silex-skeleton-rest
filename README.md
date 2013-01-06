@@ -7,12 +7,12 @@ This skeleton (you can also call it boilerplate now) is built using [Silex][2] f
 
 Background
 ----------
-The reason I made this code is because I was having a hard time finding a good EXAMPLE on utilizing Silex for real life usage.
+The very reason that this code exists is because I was having a hard time finding a good EXAMPLE on utilizing Silex for real life usage.
 I need a maintainable and testable code that made especially for API.
 
 Of course there are many good slides and information out there, but most are just giving piece by piece explanation.
 
-I'm not a good reader. I'm not I just want EXAMPLE!
+I'm not a good reader. I need an EXAMPLE!
 
 FAQ
 ---
@@ -26,7 +26,7 @@ FAQ
 "Is this code actually working?"
 - "Yeap. I use it for some smaller projects of mine. In fact, I use this more than Symfony2 I can say."
 
-"Enough chit-chat. Show me!"
+"Enough chit-chat! Show me!"
 - "Here!"
 
 What you need to know
@@ -86,7 +86,7 @@ insert into `todotestdb`.`item` values
 Why do we need to have 2 same database?
 It's not compulsory. The idea is just to differentiate between our development and our test database environment.
 
-Change the config to suit your environment. Don't worry, it's very simple.
+Change the configurations to suit your environment. Don't worry, it's **simple**.
 
  * app/config/dev.php
  * app/config/prod.php
@@ -122,15 +122,17 @@ Try also put this in your url:
 
 If you can see a nice json result out of it, you can try to use http method POST, PUT and DELETE to manipulate the database using your api.
 
-If point 5 is good, you can just run this command at your main directory:
+Finally, for testing purposes, you can just run this command at your main directory:
 
 ``` sh
 $ phpunit -c app/
 ```
 
-Take your time and look around the code to understand more.
+Final
+-----
+Take your time and look around the code to understand more and do not hesitate to let me know if you have an idea how to improve this.
 
-You're ready to use it for your own purpose. Enjoy!
+You're ready to go! Enjoy!
 
 [1]: http://php.net/
 [2]: http://silex.sensiolabs.org/
