@@ -4,5 +4,8 @@
         "symfony/class-loader": "2.1.*",
         "doctrine/dbal": "2.2.*"
     },
+    "require-dev":{
+        "symfony/browser-kit"   : "2.1.*"
+    },
     "minimum-stability": "dev"
 }

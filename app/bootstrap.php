@@ -6,7 +6,7 @@ use Symfony\Component\ClassLoader\UniversalClassLoader;
 
 $loader = new UniversalClassLoader();
 
-$loader->registerNamespace('SomeBundle', __DIR__.'/../src');
+$loader->registerNamespace('Todo', __DIR__.'/../src');
 
 $loader->register();
 
