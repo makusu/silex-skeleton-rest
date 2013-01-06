@@ -41,47 +41,47 @@ Installation
 ------------
 Clone this Repository:
 
-    ``` sh
-    $ git clone git@github.com:makusu/silex-skeleton-rest.git
-    ```
+``` sh
+$ git clone git@github.com:makusu/silex-skeleton-rest.git
+```
 
 Go to the main directory and install the composer package:
 
-    ``` sh
-    php composer.phar install
-    ```
+``` sh
+$ php composer.phar install
+```
 
 You need to add option "--dev" behind if you want to have the controller test working properly.
 
 For this test, you need to put this sql command in MySQL.
 
-    ``` mysql
-    CREATE DATABASE `tododb`;
+``` mysql
+CREATE DATABASE `tododb`;
 
-    CREATE DATABASE `todotestdb`;
+CREATE DATABASE `todotestdb`;
 
-    CREATE TABLE `tododb`.`item` (
-      `id` int(11) NOT NULL AUTO_INCREMENT,
-      `name` varchar(255) NOT NULL,
-      `created` datetime NOT NULL,
-      PRIMARY KEY (`id`)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `tododb`.`item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-    CREATE TABLE `todotestdb`.`item` (
-      `id` int(11) NOT NULL AUTO_INCREMENT,
-      `name` varchar(255) NOT NULL,
-      `created` datetime NOT NULL,
-      PRIMARY KEY (`id`)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `todotestdb`.`item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-    insert into `tododb`.`item` values
-    (null, "Download silex-skeleton-rest.", "2013-01-01 00:00:00"),
-    (null, "Utilize the skeleton so I can use it for my project.", "2013-01-06 19:00:00");
+insert into `tododb`.`item` values
+(null, "Download silex-skeleton-rest.", "2013-01-01 00:00:00"),
+(null, "Utilize the skeleton so I can use it for my project.", "2013-01-06 19:00:00");
 
-    insert into `todotestdb`.`item` values
-    (null, "Download silex-skeleton-rest.", "2013-01-01 00:00:00"),
-    (null, "Utilize the skeleton so I can use it for my project.", "2013-01-06 19:00:00");
-    ```
+insert into `todotestdb`.`item` values
+(null, "Download silex-skeleton-rest.", "2013-01-01 00:00:00"),
+(null, "Utilize the skeleton so I can use it for my project.", "2013-01-06 19:00:00");
+```
 
 Why do we need to have 2 same database?
 It's not compulsory. The idea is just to differentiate between our development and our test database environment.
@@ -100,21 +100,21 @@ If everything has been installed & configured properly, try to put this url in y
 
 You should see this result:
 
-    ``` json
-    [
-        {
-            id: "1",
-            name: "Download silex-skeleton-rest.",
-            created: "2013-01-01 00:00:00"
-        },
-        {
-            id: "2",
-            name: "Utilize the skeleton so I can use it for my project.",
-            created: "2013-01-06 19:00:00"
-        }
-    ]
-    ```
-    
+``` json
+[
+    {
+        id: "1",
+        name: "Download silex-skeleton-rest.",
+        created: "2013-01-01 00:00:00"
+    },
+    {
+        id: "2",
+        name: "Utilize the skeleton so I can use it for my project.",
+        created: "2013-01-06 19:00:00"
+    }
+]
+```
+
 Try also put this in your url:
 
     http://silex-skeleton-rest/item/1
@@ -124,9 +124,9 @@ If you can see a nice json result out of it, you can try to use http method POST
 
 If point 5 is good, you can just run this command at your main directory:
 
-    ``` sh
-    phpunit -c app/
-    ```
+``` sh
+$ phpunit -c app/
+```
 
 Take your time and look around the code to understand more.
 
