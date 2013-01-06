@@ -40,10 +40,13 @@ What you need to know
 Installation
 ------------
 1. Clone this Repository:
+
     "git clone git@github.com:makusu/silex-skeleton-rest.git"
 
 2. Go to the main directory and install the composer package:
+
     "php composer.phar install"
+
 You need to add option "--dev" behind if you want to have the controller test working properly.
 
 3. For this test, you need to put this sql command in MySQL.
@@ -85,15 +88,22 @@ It's not compulsory. The idea is just to differentiate between our development a
  * Your server configuration must be pointing to: web/index.php (prod) and web/index_dev.php (dev)
 
 5. If everything has been installed & configured properly, try to put this url in your browser:
+
     http://silex-skeleton-rest/item
+
 You should see this result:
+
     [{"id":"1","name":"Download silex-skeleton-rest.","created":"2013-01-01 00:00:00"},{"id":"2","name":"Utilize the skeleton so I can use it for my project.","created":"2013-01-06 19:00:00"}]
+
 Try also put this in your url:
+
     http://silex-skeleton-rest/item/1
     http://silex-skeleton-rest/item/2
+
 If you can see a nice json result out of it, you can try to use http method POST, PUT and DELETE to manipulate the database using your api.
 
 6. If point 5 is good, you can just run this command at your main directory:
+
     phpunit -c app/
 
 7. Take your time and look around the code to understand more.
