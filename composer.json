@@ -1,4 +1,15 @@
 {
+    "name": "makusu/silex-skeleton-rest",
+    "description": "This skeleton / boilerplate is built using Silex for general ReSTful (API) purposes.",
+    "homepage": "http://github.com/makusu/silex-skeleton-rest",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Meiden Dasuki",
+            "email": "max@meidendasuki.com",
+            "homepage": "http://www.maxmeidendasuki.com/"
+        }
+    ],
     "require": {
         "silex/silex": "1.0.*",
         "symfony/class-loader": "2.1.*",
