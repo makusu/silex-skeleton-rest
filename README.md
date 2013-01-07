@@ -1,6 +1,8 @@
 Silex Skeleton ReSTful
 ======================
 
+[![Build Status](https://travis-ci.org/makusu/silex-skeleton-rest.png?branch=master)](https://travis-ci.org/makusu/silex-skeleton-rest)
+
 Description
 -----------
 This skeleton (you can also call it boilerplate now) is built using [Silex][2] for general [ReSTful (API)][6] purposes.
