@@ -47,7 +47,11 @@ Clone this Repository:
 $ git clone git@github.com:makusu/silex-skeleton-rest.git
 ```
 
-Go to the main directory and install the composer package:
+Go to the main directory and download the latest composer file:
+
+    http://getcomposer.org/download/
+
+After the download is complete, you can start installing the required package by running this command:
 
 ``` sh
 $ php composer.phar install
