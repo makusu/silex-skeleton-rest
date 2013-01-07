@@ -1,0 +1,18 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+
+env:
+  - DB=mysql
+
+before_script:
+  - composer install
+  - pyrus config-set auto_discover 1
+  - pyrus install --force phpunit/DbUnit
+  - phpenv rehash
+  - mysql -e "CREATE DATABASE IF NOT EXISTS `todotestdb`;" -uroot;
+  - mysql -e "CREATE TABLE IF NOT EXISTS `todotestdb`.`item` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `created` datetime NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8";" -uroot;
+
+script: phpunit -c app/

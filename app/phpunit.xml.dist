@@ -27,7 +27,7 @@
         <var name="DB_DSN" value="mysql:host=localhost;dbname=todotestdb" />
         <var name="DB_HOST" value="localhost" />
         <var name="DB_USER" value="root" />
-        <var name="DB_PASSWD" value="123456" />
+        <var name="DB_PASSWD" value="" />
         <var name="DB_DBNAME" value="todotestdb" />
     </php>
 </phpunit>
