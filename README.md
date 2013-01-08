@@ -41,23 +41,18 @@ What you need to know
 
 Installation
 ------------
-Clone this Repository:
 
-``` sh
-$ git clone git@github.com:makusu/silex-skeleton-rest.git
-```
-
-Go to the main directory and download the latest composer file:
+You can do the conventional way which is clone this repository, or the easiest way, you can just directly download composer (if you don't have it yet) here:
 
     http://getcomposer.org/download/
 
 After the download is complete, you can start installing the required package by running this command:
 
 ``` sh
-$ php composer.phar install
+$ php composer.phar create-project makusu/silex-skeleton-rest
 ```
 
-You need to add option "--dev" behind if you want to have the controller test working properly.
+You can add option "--dev" behind if you want to have the controller test working properly.
 
 For this test, you need to put this sql command in MySQL.
 
