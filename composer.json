@@ -18,5 +18,6 @@
     "require-dev":{
         "symfony/browser-kit"   : "2.1.*"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "version": "1.0.0"
 }
