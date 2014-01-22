@@ -26,15 +26,23 @@ class ControllerCore implements ControllerProviderInterface {
         $calledClass = explode('\\', get_called_class());
         $class = end($calledClass);
 
-        $this->setRepository(substr($class, 0, -10));
+        $this->setRepository($this->getRepositoryFromCalledClass($calledClass));
         $this->setController(new ControllerCollection(new Route()));
+    }
+
+    private function getRepositoryFromCalledClass($calledClass)
+    {
+        $class = substr(end($calledClass), 0, -10);
+        $repository = $calledClass[0] . "\\" . $calledClass[1] . "\\Repository\\" . $class . "Repository";
+
+        return $repository;
     }
 
     public function connect(Application $app)
     {
         $controller = $this->controller;
 
-        $targetRepository = "Todo\\TaskBundle\\Repository\\" . $this->repository . "Repository";
+        $targetRepository = $this->repository;
 
         $controller->get("/", function() use ($app, $targetRepository) {
             $repository = new $targetRepository($app['db']);
