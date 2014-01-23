@@ -24,7 +24,6 @@ class ControllerCore implements ControllerProviderInterface {
 
     public function __construct() {
         $calledClass = explode('\\', get_called_class());
-        $class = end($calledClass);
 
         $this->setRepository($this->getRepositoryFromCalledClass($calledClass));
         $this->setController(new ControllerCollection(new Route()));
