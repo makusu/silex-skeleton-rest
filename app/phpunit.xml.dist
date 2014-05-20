@@ -22,7 +22,7 @@
     </filter>
 
     <php>
-        <server name="APP_DIR" value="/home/travis/builds/makusu/silex-skeleton-rest/app" />
+        <server name="APP_DIR" value="/home/travis/build/makusu/silex-skeleton-rest/app" />
         <var name="DB_DRIVER" value="pdo_mysql" />
         <var name="DB_DSN" value="mysql:host=localhost;dbname=todotestdb" />
         <var name="DB_HOST" value="localhost" />
